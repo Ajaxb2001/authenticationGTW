@@ -1,0 +1,155 @@
+.admin-dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .admin-dashboard-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .admin-user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-user-table th,
+  .admin-user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-user-table th {
+    background-color: #6e8efb;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .admin-user-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-edit-input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-save-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-save-button:hover {
+    background-color: #45a049;
+  }
+  
+  .admin-edit-button,
+  .admin-delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .admin-edit-button:hover {
+    color: #6e8efb;
+  }
+  
+  .admin-delete-button:hover {
+    color: #e57373;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .admin-dashboard-container {
+      padding: 15px;
+    }
+  
+    .admin-dashboard-container h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .admin-user-table th,
+    .admin-user-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .admin-edit-input {
+      padding: 6px;
+    }
+  
+    .admin-save-button {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  
+    .admin-edit-button,
+    .admin-delete-button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-dashboard-container {
+      padding: 10px;
+    }
+  
+    .admin-dashboard-container h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .admin-user-table th,
+    .admin-user-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .admin-edit-input {
+      padding: 5px;
+    }
+  
+    .admin-save-button {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  
+    .admin-edit-button,
+    .admin-delete-button {
+      font-size: 14px;
+    }
+  }
+  

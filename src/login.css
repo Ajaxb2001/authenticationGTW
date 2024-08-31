@@ -1,0 +1,134 @@
+/* login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f5dc, #a777e3);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    animation: slideIn 0.8s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group:hover {
+    border-color: #a777e3;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #777;
+    transition: color 0.3s;
+  }
+  
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    padding: 5px;
+    background: transparent;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  input:focus + .icon,
+  .input-group:hover .icon {
+    color: #6e8efb;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6e8efb;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #a777e3;
+    transform: scale(1.05);
+  }
+  
+  .google-login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #db4437;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .google-login-button:hover {
+    background-color: #c53d31;
+    transform: scale(1.05);
+  }
+  
+  .google-icon {
+    margin-right: 10px;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

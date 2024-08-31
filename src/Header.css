@@ -1,0 +1,68 @@
+/* General Styles for Header */
+.app-header {
+    background-color: #333; /* Dark background for the header */
+    color: #ffffff; /* White text color */
+    padding: 1rem 2rem; /* Padding for top/bottom and left/right */
+    display: flex; /* Flexbox layout for header */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and navigation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+  }
+  
+  /* Container for header content */
+  .header-container {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center align container */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Flexbox layout for header container */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and navigation */
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 1.75rem; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font weight for emphasis */
+    letter-spacing: 0.05em; /* Slightly spaced letters */
+    text-transform: uppercase; /* Uppercase letters */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Navigation links container */
+  .nav-links {
+    display: flex; /* Flexbox layout for navigation links */
+  }
+  
+  /* Individual navigation link styling */
+  .nav-link {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    margin-left: 1.5rem; /* Space between links */
+    font-size: 1rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Hover effect for navigation links */
+  .nav-link:hover {
+    color: #f39c12; /* Bright yellow/orange color on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column; /* Stack logo and navigation vertically */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .nav-links {
+      margin-top: 1rem; /* Space between logo and navigation links */
+      width: 100%; /* Full width of the container */
+      display: flex; /* Flexbox layout for navigation links */
+      justify-content: space-around; /* Space links evenly */
+    }
+  
+    .nav-link {
+      margin-left: 0; /* Remove left margin for small screens */
+    }
+  }
+  

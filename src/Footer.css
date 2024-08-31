@@ -1,0 +1,53 @@
+/* General Styles for Footer */
+.app-footer {
+    background-color: #282c34; /* Dark background for footer */
+    color: #ffffff; /* White text color */
+    padding: 2rem 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Font for footer text */
+  }
+  
+  /* Container for footer content */
+  .footer-container {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center align container */
+    padding: 0 1rem; /* Padding on left and right */
+  }
+  
+  /* Footer text styling */
+  .app-footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.875rem; /* Smaller font size for copyright text */
+  }
+  
+  /* Footer links container */
+  .footer-links {
+    margin-top: 1rem; /* Space between copyright and links */
+  }
+  
+  /* Individual footer links styling */
+  .footer-link {
+    color: #61dafb; /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 1rem; /* Space between links */
+    font-size: 0.875rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Hover effect for footer links */
+  .footer-link:hover {
+    color: #21a1f1; /* Darker blue on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .footer-links {
+      margin-top: 1rem; /* Adjust spacing for smaller screens */
+    }
+  
+    .footer-link {
+      display: block; /* Stack links vertically */
+      margin: 0.5rem 0; /* Space between links */
+    }
+  }
+  

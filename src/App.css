@@ -1,0 +1,78 @@
+/* General Styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Card container for centering and padding */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Styling for the form card */
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the form card */
+.form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Toggler button styling */
+.toggle-button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+/* Hover effect for the toggle button */
+.toggle-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Icon styling inside the toggle button */
+.toggle-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* Change icon color on hover */
+.toggle-button:hover .toggle-icon {
+  color: #ffffff;
+}
